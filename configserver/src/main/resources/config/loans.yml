@@ -1,0 +1,11 @@
+build:
+  version: "3.0"
+
+loans:
+  message: "Welcome to Lvgod loans related local APIs"
+  contactDetails:
+    name: "Ssa Andarabi -Developer"
+    email: "ssa.andarabi@lvgod.com"
+  onCallSupport:
+      -(031) 555-123-1234
+      -(031) 555-123-1235

@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+cards:
+  message: "Welcome to Lvgod cards related prod APIs "
+  contactDetails:
+    name: "Mike Janson - developer"
+    email: "mike_janson@lvgod.nl"
+  onCallSupport:
+    - (0032) 419-311-3455
+    - (0032) 419-311-3466
