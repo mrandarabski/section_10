@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to Lvgod accounts related prod APIs "
+  contactDetails:
+    name: "Reine Aishwarya - Product Owner"
+    email: "aishwarya@lvgod.com"
+  onCallSupport:
+    - (0031) 392-222-4829
+    - (0031) 203-333-0384

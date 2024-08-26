@@ -1,0 +1,11 @@
+build:
+  version: "2.0"
+
+loans:
+  message: "Welcome to Lvgod loans releated QA APIs"
+  contactDetails:
+    name: "King Zda - Product Owner"
+    email: "king.zda@lvgod.nl"
+  onCallSupport:
+    - (0031) 321-456-7822
+    - (0031) 321-456-7833

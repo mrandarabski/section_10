@@ -1,0 +1,11 @@
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to Lvgod accounts related local APIs"
+  contactDetails:
+    name: "A Andarabi -Developer"
+    email: "a.andarabi@lvgod.com"
+  onCallSupport:
+    -(031) 555-123-1234
+    -(031) 555-123-1235
