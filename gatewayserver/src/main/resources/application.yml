@@ -7,8 +7,8 @@ spring:
     gateway:
       discovery:
         locator:
-          enabled: true
-          #lowerCaseServiceId: true
+          enabled: false
+          lowerCaseServiceId: true
 
 management:
   endpoints:
@@ -25,11 +25,11 @@ management:
 info:
   app:
     name: "gatewayserver"
-    description: "Lvgod Gatewayserver Application"
+    description: "Lvgod Gateway Server Application"
     version: "1.0.0"
 
 logging:
   level:
     com:
-      lvgod:
+      andarabski:
         gatewayserver: DEBUG
