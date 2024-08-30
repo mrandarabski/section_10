@@ -22,17 +22,23 @@ public class GatewayserverApplication {
 				.route(p -> p
 						.path("/lvgod/accounts/**")
 						.filters(f -> f.rewritePath("/lvgod/accounts/(?<segment>.*)","/${segment}")
-								.addResponseHeader("X-Response-Time", LocalDateTime.now().toString()))
+								.addResponseHeader("X-Response-Time", LocalDateTime.now().toString())
+								.circuitBreaker(config -> config.setName("accountCircuitBreaker")
+										.setFallbackUri("forward/contactSupport")))
 						.uri("lb://ACCOUNTS"))
 				.route(p -> p
 						.path("/lvgod/loans/**")
 						.filters(f -> f.rewritePath("/lvgod/loans/(?<segment>.*)","/${segment}")
-								.addResponseHeader("X-Response-Time", LocalDateTime.now().toString()))
+								.addResponseHeader("X-Response-Time", LocalDateTime.now().toString())
+								.circuitBreaker(config -> config.setName("loansCircuitBreaker")
+										.setFallbackUri("forward/contactSupport")))
 						.uri("lb://LOANS"))
 				.route(p -> p
 						.path("/lvgod/cards/**")
 						.filters(f -> f.rewritePath("/lvgod/cards/(?<segment>.*)","/${segment}")
-								.addResponseHeader("X-Response-Time", LocalDateTime.now().toString()))
+								.addResponseHeader("X-Response-Time", LocalDateTime.now().toString())
+								.circuitBreaker(config -> config.setName("cardsCircuitBreaker")
+										.setFallbackUri("forward/contactSupport")))
 						.uri("lb://CARDS"))
 				.build();
 

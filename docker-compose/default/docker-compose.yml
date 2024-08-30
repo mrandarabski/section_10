@@ -101,7 +101,7 @@ services:
       service: microservice-eureka-config
 
   gatewayserver:
-    image: "lvogd/gatewayserver:s9"
+    image: "lvgod/gatewayserver:s9"
     container_name: gatewayserver-ms
     ports:
       - "8072:8072"
