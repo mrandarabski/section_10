@@ -33,6 +33,7 @@ logging:
     com:
       andarabski:
         gatewayserver: DEBUG
+
 resilience4j.circuitbreaker:
   configs:
     default:
